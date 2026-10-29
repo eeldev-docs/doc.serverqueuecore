@@ -61,7 +61,9 @@ lookup, so it uses the cached priority, or Regular on a first visit.
 ### Changing priorities on a running server
 
 - `ServerQueue.Priority <key or id> <priority>` sets a player's priority until the next reload and reorders the queue.
-- `ServerQueue.Reload` rereads the settings, recreates the providers and forgets cached and admin-set priorities.
+- `ServerQueue.Reload` (or **Reload Settings**) rereads the settings, recreates the providers and forgets cached and
+  admin-set priorities. Then it looks up the priority of every waiting and playing player again, so a change in the
+  priority file moves waiting players at once.
 
 ## Reserved slots
 

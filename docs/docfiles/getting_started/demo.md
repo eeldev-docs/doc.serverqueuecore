@@ -23,6 +23,9 @@ Demo** in the Content Browser). It uses `ServerQueueDemoGameMode`, which sets th
 The first player gets in. The second waits in the queue, with their position and an estimated wait, and travels in
 by themselves as soon as the first player leaves.
 
+For priorities, parties, player verification and the server browser in Blueprint, see the
+[example project](example-project).
+
 :::tip
 Enable **Show Plugin Content** in the Content Browser settings if you can't see the plugin's content folder.
 :::

@@ -15,7 +15,7 @@ title: Console commands
 | `ServerQueue.Ping` | Client | Pings the beacon and logs the round trip |
 | `ServerQueue.Disconnect` | Client | Closes the beacon connection |
 | `ServerQueue.Status` | Both | Prints beacon state, slots and the queue |
-| `ServerQueue.Reload` | Server | Rereads settings, recreates providers, forgets cached and admin priorities |
+| `ServerQueue.Reload` | Server | Rereads settings, recreates providers, forgets cached and admin priorities, and looks up the priorities of waiting and playing players again |
 | `ServerQueue.Remove <key or id>` | Server | Removes a waiting player or cancels their unused reservation |
 | `ServerQueue.Priority <key or id> <priority>` | Server | Sets a player's priority until the next reload; reorders the queue |
 | `ServerQueue.Validate` | Both | Checks the setup and prints problems |

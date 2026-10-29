@@ -37,7 +37,7 @@ title: Client
 | **On Reservation Expired** | The reserved slot was not used in time |
 | **On Welcome** | Connected to the queue beacon (and verified, with an auth provider) |
 | **On Pong** | Answer to **Ping**, with the round trip and the server's info |
-| **On Rejected** | The server rejected the connection: protocol mismatch, no usable player id, or shutting down |
+| **On Rejected** | The server rejected the connection: protocol mismatch, no usable player id, or shutting down. The client is already Idle and does not reconnect |
 | **On Connection Lost** | The queue connection is gone and the client stopped trying, or the server refused to verify the player |
 
 ## Client states
@@ -64,6 +64,7 @@ title: Client
 | Party Not Found | The party leader is not in the queue with a party (yet) |
 | Not In Party | The party leader did not list this player |
 | Party Disbanded | The party left the queue: the leader left, or it was removed |
+| Removed By Admin | The server took the player out of the queue with **Remove Player** |
 
 ## Blueprint library
 
@@ -74,4 +75,5 @@ title: Client
 | **Format Estimated Wait** | Turns seconds into display text |
 | **Get Client State Text** | Display text for a client state |
 | **Get Session Queue Length** | The number of waiting players on a session search result, see [Server browser](../features/server-browser) |
+| **Get Session Queue Address** | The queue address ("host:port") of a session search result, for **Join Queue**. See [Server browser](../features/server-browser) |
 | **Get Player Queue Id** | The queue id for a unique net id, for [parties](../features/parties) |

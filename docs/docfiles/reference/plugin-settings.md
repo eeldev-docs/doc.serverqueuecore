@@ -14,7 +14,7 @@ title: Plugin Settings
 |---|---|---|---|
 | Total Slots | 16 | `-QueueTotalSlots=` | The server's capacity |
 | Reserved Slots | 0 | `-QueueReservedSlots=` | Part of Total Slots kept for higher priorities |
-| Lend Reserved Slots | Off | | Regular players may use free reserved slots |
+| Lend Reserved Slots | Off | `-QueueLendReservedSlots` | Regular players may use free reserved slots |
 | Reserved Slot Min Priority | Supporter | | Lowest priority that uses reserved slots |
 | Max Queue Length | 100 | `-QueueMaxLength=` | Invited party members count |
 | Max Party Size | 4 | `-QueueMaxPartySize=` | 1 turns parties off |
@@ -60,6 +60,6 @@ title: Plugin Settings
 | Setting | Default | Command line | Description |
 |---|---|---|---|
 | Auto Start Beacon Host | On | | Start the queue beacon when a server world begins play |
-| Run On Listen Server | Off | | Also run the queue on listen servers. Dedicated servers always run it |
+| Run On Listen Server | Off | | Also run the queue on listen servers. Dedicated servers always run it. The host's own player takes no slot |
 | Beacon Port | 15000 | `-BeaconPort=` | Port the beacon listens on, and the default port clients connect to |
 | Min Ping Interval | 0.25 s | | Faster pings from one client are ignored |
